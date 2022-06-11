@@ -1,0 +1,15 @@
+ class Department
+    {
+        public string Name { get; set; }
+        public int EmployeeLimit { get; set; }
+        public int Budget { get; set; }
+        public int Employees { get; set; }
+        public int RequiredExperience { get; set; }
+        public bool IsBachelorDegreeRequired { get; set; }
+
+        public void AddEmployee()
+        {
+
+        }
+
+    }

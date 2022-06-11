@@ -1,0 +1,32 @@
+ Department department = new Department();
+
+            
+            Console.WriteLine("Departament məlumatlarını daxil edin");
+            department.Name = Console.ReadLine();
+            Console.WriteLine("Departamentin ala bileceyi umumi isci sayini daxil edin");
+            string employeeLimits = Console.ReadLine();
+            department.EmployeeLimit = int.Parse(employeeLimits);
+            Console.WriteLine("Departamentin umumi budcesini daxil edin");
+            string budgets = Console.ReadLine();
+            department.Budget = int.Parse(budgets);
+            Console.WriteLine("Departamentin isci sayini daxil edin");
+            string emplloyeestr = Console.ReadLine();
+            department.Employees = int.Parse(emplloyeestr);
+            Console.WriteLine("iscilerin minimum olmali il tecrubesini daxil edin");
+            string experiencestr = Console.ReadLine();
+            department.RequiredExperience = int.Parse(experiencestr);
+            Console.WriteLine("isci ucun tehsilin vacib olub olmamasi,true or false");
+            string deegreestr = Console.ReadLine();
+            department.IsBachelorDegreeRequired = bool.Parse(deegreestr);
+
+            
+            
+                Console.WriteLine("isci elave etmek isteyirsizmi? , yes or no");
+                string cavab = Console.ReadLine();
+
+
+
+                if (cavab != "yes")
+                {
+                    Console.WriteLine(department.Budget/department.EmployeeLimit);
+                }
